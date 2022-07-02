@@ -19,6 +19,14 @@ with st.sidebar:
 
 st.title('Uber pickups in NYC')
 
+import time
+
+my_bar = st.progress(0)
+
+for percent_complete in range(100):
+     time.sleep(0.1)
+     my_bar.progress(percent_complete + 1)
+
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
          'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
