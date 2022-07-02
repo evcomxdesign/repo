@@ -3,7 +3,4 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
-
-streamlit run uber_pickups.py
-
 $ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/streamlit_app.py
