@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 
 st.title('Uber pickups in NYC')
-$ streamlit run https://raw.githubusercontent.com/streamlit/demo-uber-nyc-pickups/master/streamlit_app.py
   
   DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
