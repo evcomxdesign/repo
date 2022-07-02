@@ -24,4 +24,7 @@ data_load_state.text('Loading data...done!')
 
 @st.cache
 def load_data(nrows):
-         data_load_state.text("Done! (using st.cache)")
+data_load_state.text("Done! (using st.cache)")
+
+st.subheader('Raw data')
+st.write(data)
