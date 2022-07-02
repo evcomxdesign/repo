@@ -2,6 +2,9 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+# Object notation
+st.sidebar.[element_name]
+
 st.title('Uber pickups in NYC')
 
 DATE_COLUMN = 'date/time'
