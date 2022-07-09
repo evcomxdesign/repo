@@ -2,4 +2,5 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.write(data_frame, error)
+#API Reference - Write and magic
+st.write(data_frame)
