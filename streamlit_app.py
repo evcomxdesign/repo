@@ -1,7 +1,3 @@
-import streamlit as st
-import pandas as pd
-import numpy as np
-
 pip install streamlit-aggrid
 from st_aggrid import AgGrid
 AgGrid(my_dataframe)
