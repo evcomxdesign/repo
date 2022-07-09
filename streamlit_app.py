@@ -11,11 +11,6 @@ c = alt.Chart(df).mark_circle().encode(
 
 st.write(c)
 
-
-
-# embed streamlit docs in a streamlit app
-components.iframe("https://docs.streamlit.io/en/latest")
-
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "How would you like to be contacted?",
