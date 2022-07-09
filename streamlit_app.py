@@ -18,10 +18,3 @@ with st.sidebar:
         "Choose a shipping method",
         ("Standard (5-15 days)", "Express (2-5 days)")
     )
-
-st.title('Uber pickups in NYC')
-
-import time
-
-my_bar = st.progress(0)
-
