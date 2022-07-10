@@ -33,9 +33,10 @@ chart_data = pd.DataFrame(
      np.random.randn(50, 3),
      columns=["a", "b", "c"])
 
+st.bar_chart(chart_data)
+
 ##Pyplot chart
 import matplotlib.pyplot as plt
-import numpy as np
 
 arr = np.random.normal(1, 1, size=100)
 fig, ax = plt.subplots()
@@ -44,10 +45,6 @@ ax.hist(arr, bins=20)
 st.pyplot(fig)
 
 ##Altair chart
-import pandas as pd
-import numpy as np
-import altair as alt
-
 df = pd.DataFrame(
      np.random.randn(200, 3),
      columns=['a', 'b', 'c'])
@@ -58,9 +55,6 @@ c = alt.Chart(df).mark_circle().encode(
 st.altair_chart(c, use_container_width=True)
 
 ##Vega line chart
-import pandas as pd
-import numpy as np
-
 df = pd.DataFrame(
      np.random.randn(200, 3),
      columns=['a', 'b', 'c'])
@@ -74,7 +68,3 @@ st.vega_lite_chart(df, {
          'color': {'field': 'c', 'type': 'quantitative'},
      },
  })
-
-
-
-st.bar_chart(chart_data)
