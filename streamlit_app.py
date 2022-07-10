@@ -35,15 +35,6 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 
-##Pyplot chart
-import matplotlib.pyplot as plt
-
-arr = np.random.normal(1, 1, size=100)
-fig, ax = plt.subplots()
-ax.hist(arr, bins=20)
-
-st.pyplot(fig)
-
 ##Altair chart
 df = pd.DataFrame(
      np.random.randn(200, 3),
