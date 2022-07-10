@@ -10,13 +10,5 @@ st.write(pd.DataFrame({
      'second column': [10, 20, 30, 40],
  }))
 
-st.write('You selected:', option)
-
-genre = st.radio(
-     "What's your favorite movie genre",
-     ('Comedy', 'Drama', 'Documentary'))
-
-if genre == 'Comedy':
-     st.write('You selected comedy.')
- else:
-     st.write("You didn't select comedy.")
+title = st.text_input('Movie title', 'Life of Brian')
+st.write('The current movie title is', title)
