@@ -10,9 +10,6 @@ st.write(pd.DataFrame({
      'second column': [10, 20, 30, 40],
  }))
 
-if st.button('Say hello'):
-     st.write('Why hello there')
-
 st.write('You selected:', option)
 
 genre = st.radio(
