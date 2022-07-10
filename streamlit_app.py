@@ -12,3 +12,18 @@ st.write(pd.DataFrame({
 
 title = st.text_input('Movie title', 'Life of Brian')
 st.write('The current movie title is', title)
+
+#Charts
+##Line chart
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.line_chart(chart_data)
+
+##Area chart
+chart_data = pd.DataFrame(
+     np.random.randn(20, 3),
+     columns=['a', 'b', 'c'])
+
+st.area_chart(chart_data)
