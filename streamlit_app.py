@@ -49,3 +49,5 @@ st.latex(r'''
      a \left(\frac{1-r^{n}}{1-r}\right)
      ''')
 
+st.text('This is some text.')
+
