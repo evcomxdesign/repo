@@ -38,7 +38,7 @@ st.bar_chart(chart_data)
 st.title('This is a title')
 st.header('This is a header')
 st.subheader('This is a subheader')
-st.caption('This is a string that explains something above.')
+st.caption('This is a string that explains something above. This is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something aboveThis is a string that explains something above')
 code = '''def hello():
      print("Hello, Streamlit!")'''
 st.code(code, language='python')
