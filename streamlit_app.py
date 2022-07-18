@@ -51,7 +51,7 @@ st.latex(r'''
 
 st.text('This is some text.')
 
-col1, col2, col3 = st.columns(3, gap="large")
+col1, col2, col3 = st.columns(spec, 3, gap="large")
 
 with col1:
     st.header("A cat")
