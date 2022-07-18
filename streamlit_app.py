@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-# Object notation
-st.sidebar.[element_name]
-
 #API reference
 ##Write and magic
 st.write(1234)
