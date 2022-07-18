@@ -2,6 +2,16 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+import streamlit as st
+
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+
 #API reference
 ##Write and magic
 st.write(1234)
