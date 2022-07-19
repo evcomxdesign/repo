@@ -96,3 +96,10 @@ for percent_complete in range(100):
 st.balloons()
 
 st.error('This is an error')
+
+st.warning('This is a warning')
+st.info('This is a purely informational message')
+st.success('This is a success message!')
+
+e = RuntimeError('This is an exception of type RuntimeError')
+st.exception(e)
