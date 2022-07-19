@@ -94,3 +94,5 @@ for percent_complete in range(100):
      
 
 st.balloons()
+
+st.error('This is an error')
