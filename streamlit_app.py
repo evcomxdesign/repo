@@ -65,53 +65,8 @@ with col3:
     st.header("An owl")
     st.image("https://static.streamlit.io/examples/owl.jpg")
      
-import streamlit as st
-
-# Using object notation
-add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
-)
-
-# Using "with" notation
-with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
-
-import time
-
-my_bar = st.progress(0)
-
-with st.spinner('Wait for it...'):
-    time.sleep(5)
-st.success('Done!')
-
-for percent_complete in range(100):
-     time.sleep(0.1)
-     my_bar.progress(percent_complete + 1)
-     
-
-st.balloons()
-
-st.error('This is an error')
-
-st.warning('This is a warning')
-st.info('This is a purely informational message')
-st.success('This is a success message!')
-
-e = RuntimeError('This is an exception of type RuntimeError')
-st.exception(e)
-
-name = st.text_input('Name')
-if not name:
-  st.warning('Please input a name.')
-  st.stop()
-st.success('Thank you for inputting a name.')
-
-name = st.text_input('Name')
-if not name:
-  st.warning('Please input a name.')
-  st.stop()
-st.success('Thank you for inputting a name.')
+dataframe = pd.DataFrame({
+     'first column': [1, 2, 3, 4],
+     'second column': [10, 20, 30, 40],
+ })
+st.experimental_show(dataframe)
