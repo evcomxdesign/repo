@@ -103,3 +103,9 @@ st.success('This is a success message!')
 
 e = RuntimeError('This is an exception of type RuntimeError')
 st.exception(e)
+
+name = st.text_input('Name')
+if not name:
+  st.warning('Please input a name.')
+  st.stop()
+st.success('Thank you for inputting a name.')
